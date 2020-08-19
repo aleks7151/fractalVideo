@@ -34,8 +34,8 @@ int		kp3(int key, t_lst *lst)
 		lst->color = 8;
 	else if (lst->color > 8)
 		lst->color = 0;
-	fon(lst);
-	fractal((void *)lst);
+	// fon(lst);
+	// fractal((void *)lst);
 	mlx_put_image_to_window(lst->mlx, lst->win, lst->img, 0, 0, lst->w, lst->h, lst->c, lst->v, lst->cycle, lst->color, lst->sh_x, lst->sh_y, lst->fractal[0], WIDTH, HEIGHT);
 	return (0);
 }

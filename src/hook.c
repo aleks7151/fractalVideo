@@ -21,8 +21,8 @@ int		mm(int x, int y, void *l)
 		return (0);
 	lst->c = ((float)x - lst->width / 2) / (lst->width / 2);
 	lst->v = ((float)y - lst->height / 2) / (lst->height / 2);
-	fon(lst);
-	fractal(l);
+	// fon(lst);
+	// fractal(l);
 	mlx_put_image_to_window(lst->mlx, lst->win, lst->img, 0, 0, lst->w, lst->h, lst->c, lst->v, lst->cycle, lst->color, lst->sh_x, lst->sh_y, lst->fractal[0], WIDTH, HEIGHT);
 	return (0);
 }
@@ -44,8 +44,8 @@ int		mp0(int b, int x, int y, t_lst *lst)
 		lst->movement = 0;
 	else if (b == 1)
 		lst->movement = 1;
-	fon(lst);
-	fractal((void *)lst);
+	// fon(lst);
+	// fractal((void *)lst);
 	mlx_put_image_to_window(lst->mlx, lst->win, lst->img, 0, 0, lst->w, lst->h, lst->c, lst->v, lst->cycle, lst->color, lst->sh_x, lst->sh_y, lst->fractal[0], WIDTH, HEIGHT);
 	return (0);
 }

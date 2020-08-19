@@ -117,7 +117,7 @@ void	window(t_lst *lst)
 	lst->v = 0;
 	lst->cycle = 50;
 	lst->movement = 0;
-	fractal((void *)lst);
+	// fractal((void *)lst);
 	mlx_put_image_to_window(lst->mlx, lst->win, lst->img, 0, 0, lst->w, lst->h, lst->c, lst->v, lst->cycle, lst->color, lst->sh_x, lst->sh_y, lst->fractal[0], WIDTH, HEIGHT);
 }
 
